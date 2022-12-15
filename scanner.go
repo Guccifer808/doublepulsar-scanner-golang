@@ -155,26 +155,6 @@ func incIP(ip net.IP) {
 	}
 }
 
-// func scanNetCIDR(netCIDR string) error {
-// 	ip, ipNet, err := net.ParseCIDR(netCIDR)
-// 	if err != nil {
-// 		return err
-// 	}
-// 	var wg sync.WaitGroup
-
-// 	for ip := ip.Mask(ipNet.Mask); ipNet.Contains(ip); incIP(ip) {
-// 		wg.Add(1)
-// 		go func(ip string) {
-// 			defer wg.Done()
-// 			// scanHost(ip)
-// 		}(ip.String())
-// 	}
-
-// 	wg.Wait()
-
-// 	return nil
-// }
-
 func scanner(targets <-chan *Target, results chan<- *Result, verbose bool, wg *sync.WaitGroup) {
 	defer wg.Done()
 
