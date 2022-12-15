@@ -181,7 +181,7 @@ func reporter(results <-chan *Result, csv *os.File, verbose bool, wg *sync.WaitG
 }
 
 func main() {
-	fmt.Println("WannaCry scanner tool by BiZone\n")
+	fmt.Println("Scanner tool\n")
 
 	host := flag.String("ip", "", "IP address")
 	netmask := flag.String("net", "", "IP network address. Example: 10.0.1.0/24")
