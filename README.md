@@ -1,6 +1,7 @@
 # Do not attempt to violate the law with anything contained here.
 > You shall not misuse the information to gain unauthorised access. <br/>
-> This tool is related to Computer Security and do not promote hacking / cracking
+> This <b>Penetration test</b> tool is related to Computer Security and do not promote hacking / cracking <br>
+
 <hr/>
 
 ### SMB EternalBlue and DoublePulsar exploit scanner tool made with GoLang
